@@ -1,0 +1,429 @@
+% !TEX program = xelatex
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{1.5em}
+\renewcommand{\baselinestretch}{1.3}
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{#1}\descript{\\
+#2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill} \location{#3
+ #4}\\
+\textbf{#2}\fakeNewLine}
+
+\newcommand{\teachingHeading}[4]{\runsubsection{#1}\hspace*{\fill} \location{#3
+ #4} \textbf{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Curso:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Ayudante Alumno:} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Perfil
+%--------------------------------------------------------------
+\newcommand{\yourName}{OCAMPO, Nicolás Benjamín}
+\newcommand{\yourWebsite}{Blog}
+\newcommand{\yourWebsiteLink}{https://benjaminocampo.netlify.app/}
+\newcommand{\yourEmail}{nicolasbenjaminocampo@gmail.com}
+\newcommand{\yourPhone}{~+54~(387)~15469~0467}
+\newcommand{\githubUserName}{benjaminocampo}
+\newcommand{\linkedInUserName}{benjamin-ocampo}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName}
+\end{center}
+
+%--------------------------------------------------------------
+%     Datos Personales
+%--------------------------------------------------------------
+
+\noindent
+\begin{minipage}{0.6\textwidth}
+
+    \section{Datos Personales}
+
+    \sectionsep
+
+    \large{\textbf{Apellido y Nombre:} \yourName
+    \vspace*{0.6em}
+
+    \textbf{Lugar de Nacimiento:} Salta Capital, Argentina
+    \vspace*{0.6em}
+
+    \textbf{Fecha de Nacimiento:} 15 de Julio de 1999
+    \vspace*{0.6em}
+
+    \textbf{Estado Civil:} Soltero
+    \vspace*{0.6em}
+
+    \textbf{Teléfono:} \yourPhone
+    \vspace*{0.6em}
+
+    \textbf{Correo electrónico:}
+    \href{mailto:\yourEmail}{\underline{\yourEmail}}
+    \vspace*{0.6em}
+
+    \textbf{LinkedIn:}
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}}
+    \vspace*{0.6em}
+
+    \textbf{Sitio Web:} \href{\yourWebsiteLink}{\underline{\yourWebsiteLink}}
+    \vspace*{0.6em}
+
+    \textbf{GitHub:}
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}\begin{flushright}
+\end{flushright}
+\end{minipage}%
+
+%--------------------------------------------------------------
+%     Educación
+%--------------------------------------------------------------
+\section{Educación}
+
+\educationHeading{Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus
+Aplicaciones}{Facultad de Matemática, Astronomía, Física, y Computación,
+Universidad Nacional de Córdoba}{Córdoba, Argentina |}{Mar 2021 - Actualidad}
+
+\educationHeading{Licenciatura en Ciencias de la Computación}{Facultad de
+Matemática, Astronomía, Física, y Computación, Universidad Nacional de Córdoba
+\\
+\faMortarBoard Promedio general: 9.58. \\
+\faMortarBoard Promedio histórico de la carrera en los últimos 5 años:
+8.10.}{Córdoba, Argentina |}{Ene 2017, Actualidad}
+
+Fecha esperada para defensa del título de grado: Diciembre 2021. \\
+Tema de la tesis: Uso de Word Embeddings para Grounding Heuristico en Planning Clásico.
+
+\educationHeading{Analista en Computación}{Facultad de Matemática, Astronomía,
+Física, y Computación, Universidad Nacional de Córdoba \\
+    \faMortarBoard Promedio General: 9.56}{Córdoba, Argentina |}{Ene 2017
+- Dic 2019}
+
+\educationHeading{Escuela Secundaria}{Instituto de Educación Media Dr. Arturo
+Oñativia \\
+\faMortarBoard Promedio General: 9.22}{Salta, Argentina}{Ene 2011 - Dic 2016}
+
+
+%--------------------------------------------------------------
+%     Courses Possibly Relevant to the Position
+%--------------------------------------------------------------
+
+\vspace*{2em}
+
+\section{Cursos Realizados}
+
+\runsubsection{Materias de la carrera de grado donde obtuve una nota de 10 en la
+Facultad de Matemática, Astronomía, Física, y Computación (FaMAF), Universidad
+Nacional de Córdoba}
+
+    \textbf{Matemática Discreta II.} Algoritmos de grafos. Flujo Maximal. Código
+    Cíclicos. Problemas P y NP.
+
+    \textbf{Computación Paralela.} Técnicas de optimización de programas.
+    
+    \textbf{Redes Neuronales.} Sistemas dinámicos. Modelado de neuronas reales y
+    artificiales.
+
+    \textbf{Probabilidad y Estadística.} Análisis y Visualización de datos.
+    Variables aleatorias Test de hipótesis.
+
+    \textbf{Modelos y Simulación.} Números aleatorios. Generación de variables
+    aleatorias. Simulación de procesos estocásticos.
+
+    \textbf{Análisis Matemático I} Funciones continuas. Valores extremos de
+    funciones en intervalos cerrados. Derivadas. Extremos relativos. Reglas de
+    L'Hopital. Derivadas sucesivas. Gráfico de funciones. Antiderivadas.
+
+    \textbf{Análisis Matemático II.} Métodos de Integración, sucesiones y
+    subsucesiones. Series numéricas. Series de potencia. Series de Taylor y
+    polinomios. Geometría Analítica: rectas y planos en $R^n$. Funciones de
+    varias variables, derivadas parciales, derivadas direccionales, y gradientes.
+    Integrales múltiples.
+
+    \textbf{Análisis Numérico.} Análisis de error absoluto y relativo. Redondeo
+    y truncamiento. Sistemas de punto flotante. Solución de ecuaciones no
+    lineales: bisección, newton, secante y métodos de punto fijo. Interpolación
+    polinomial y splines. Cuadrados mínimos. Integración numérica. Sistemas de
+    ecuaciones lineales.
+
+    \textbf{Algoritmos y Estructuras de Datos II.} Representación de datos en
+    memoria. Estructura de datos. Tipos abstractos de datos y sus
+    implementaciones. Punteros. Algoritmos voraces. Divide y venceras. Recursión
+    y backtracking. Programación Dinámica. Complejidad Algoritmica.
+
+\runsubsection{Cursos optativos que participé en la Escuela de Verano RIO 2020,
+Facultad de Ciencias Exactas, Físico-Químicas, y Naturales (FCEFyN), Universidad
+Nacional de Río Cuarto, Argentina}
+
+    \textbf{Enfoques Clásicos y Neuronales a la Minería de Texto.}
+    Análisis teórico-práctico de información no estructurada obtenida a partir
+    de textos provenientes de la interacción con el Procesamiento del Lenguaje
+    Natural, Recuperación de la Información, y Machine Learning.
+
+    \textbf{Software Testing.}
+    Técnicas y conceptos de verificación de programas tales como Fuzzing,
+    Symbolic Execution, Bounded Model Checking, entre otras.
+
+\runsubsection{Cursos de docencia que participé en la Diplomatura Aprender a
+Enseñar, Universidad Nacional de Córdoba}
+
+    \textbf{Diplomatura Aprender a enseñar.} Capacitación sobre los roles de un
+    ayudante alumno, tutor, y docente universitario y como llevarlos acabo de
+    manera efectiva.
+
+\section{Participación en Seminarios}
+
+\educationHeading{Segmentación de Imágenes Médicas Usando Redes
+Neuronales}{Organizado por el Grupo de Grandes Redes Sociales y Semánticas.
+Duración: 1,30hs.}{}{FaMAF}
+
+\educationHeading{Aprendizaje  Automático Sobre Datos Encriptados}{Organizado
+por el Grupo de Grandes Redes Sociales y Semánticas. Duración: 1,30hs.}{}{FaMAF}
+
+\educationHeading{Integrando Interpretabilidad y Eficiencia en la Detección
+Anticipada de Riesgos en las Redes Sociales}{Organizado por el Grupo de Grandes
+Redes Sociales y Semánticas. Duración: 1,30hs.}{}{FaMAF}
+
+\educationHeading{Aplicaciones de Eye-tracking en Salud Visual y
+Mental}{Organizado por el Grupo de Grandes Redes Sociales y Semánticas.
+Duración: 1,30hs.}{}{FaMAF}
+
+\educationHeading{El Futuro del Desarrollo Mobile}{Organizado por la escuela de
+verano RIO 2020. Duración: 2hs.}{}{FCEFyN}
+
+\educationHeading{Machine Learning — Soluciones y Aplicaciones en Environment
+Business}{Organizado por la empresa Futit Services en la escuela de verano RIO
+2020. Duración: 2hs.}{}{FCEFyN}
+
+\educationHeading{Business Intelligence — Realidad y Experiencia}{Organizado por
+la empresa Trimix en la escuela de verano RIO 2020. Duración: 2hs.}{}{FCEFyN}
+
+\educationHeading{La Evolución de las APIs: GraphQL}{Organizado por la empresa
+WeDevelop en la escuela de verano RIO 2020. Duración: 2hs.}{}{FCEFyN}
+
+%-------------------------------------------------------------
+%     Experiencia Docente
+%--------------------------------------------------------------
+
+\section{Experiencia Docente}
+\teachingHeading{Ayudante Alumno}{}{FaMAF |}{Mar 2020 - Actualidad}
+
+\textbf{Redes y Sistemas Distribuidos.} Preparación de material extra que
+facilite la comprensión del material de estudio. Planificación de reuniones
+virtuales con grupos de estudiantes para responder preguntas y dudas de la
+materia.
+
+\textbf{Sistemas Operativos.} Preparación de material extra que
+facilite la comprensión del material de estudio. Planificación de reuniones
+virtuales con grupos de estudiantes para responder preguntas y dudas de la
+materia.
+
+\textbf{Algoritmos y Estructuras de Datos I.} Solución a obstaculos didácticos y
+cognitivos que afecten el progreso de los estudiantes. Sugerencias y comentarios
+en la corrección de proyectos de laboratorios.
+
+\textbf{Paradigmas de la Programación.} Planificación de reuniones
+virtuales con grupos de estudiantes para responder preguntas y dudas de la
+materia.
+
+\textbf{Curso de Nivelación.} Preparación de clases online bajo un cronograma
+estipulado. Respuestas de dudas por aula virtual.
+
+\teachingHeading{Tutor}{}{FaMAF |}{Sep 2020 - Jun 2021}
+
+Preparación de tutoriales online para introducir nuevos estudiantes a la vida
+universitaria. Organización de eventos para complementar el plan de estudio de
+los estudiantes por medio de conversaciones, juegos, y actividades.
+
+\teachingHeading{Ayudante Alumno}{}{Instituto Técnico Superior Córdoba,
+Argentina |}{Sep 2020 - May 2021}
+
+\textbf{Verificación de Programas.} Proveer asistencia a estudiantes para
+preparar exposiciones orales.
+
+%--------------------------------------------------------------
+%     Proyectos de Inteligencia Artificial y Programación
+%--------------------------------------------------------------
+
+\section{Pasantías}
+\teachingHeading{Desarrollo de Software en Machine Learning}{}{SimTLiX |}{Oct 2021 - Actualidad}
+
+Mantenimiento e implementación de nuevas funcionalidad en modelos neuronales
+para la segmentación del húmero y escapula en imagenes médicas.
+
+%--------------------------------------------------------------
+%     Proyectos de Inteligencia Artificial y Programación
+%--------------------------------------------------------------
+\section{Proyectos de Programación (Inteligencia Artificial y Otros)}
+
+\projectHeading{Categorización de Publicaciones de Mercado Libre
+Libre}{https://github.com/benjaminocampo/Mentoria}{} \textbf{Desarrollado en la
+Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones,
+FaMAF.} \\
+    \textbf{Lenguajes de programación y herramientas utilizadas: Python, Keras,
+    Pandas, Scikit-learn, y NLTK.} \\
+    \textbf{Duración: 9 meses (En desarrollo).}
+
+    Implementación de un clasificador que predice la categoría de un producto dado
+    el título de su publicación por medio de datos otorgados por la empresa
+    Mercado Libre para el MeLi Challenge 2019.
+
+\projectHeading{Optimización de Ecuaciones Navier
+    Stokes}{https://gitfront.io/r/user-1529562/1df7f0690a8d6eeffcb1cffeb1c3a408084afd08/navierstokes-mirror/}{}
+    \textbf{Desarrollado en la materia Computación Paralela de la Licenciatura
+    en Ciencias de la Computación, FaMAF.} \\
+    \textbf{Lenguajes de programación y herramientas utilizadas: C, C++, Python,
+    CUDA, Intrinsics, y ISPC.} \\
+    \textbf{Duración: 6 meses.}
+
+    Aplicación de un simulador de dinámica de fluidos usando métodos numéricos.
+    Implementación por medio de técnicas de bajo nivel que maximizen la performance.
+    Desarrollo de scripts en Python para obtener, registrar y producir métricas.
+
+\projectHeading{Blog Personal}{https://benjaminocampo.netlify.app/}{}
+    \textbf{Actividad Extracurricular} \\
+    \textbf{Lenguajes de programación y herramientas utilizadas: ReactJS,
+    GatsbyJS, y Javascript.} \\
+    \textbf{Duración: 3 meses.}
+
+    Blog personal donde comparto mis experiencias, ideas, y tutoriales.
+
+\vspace{3em}
+
+\projectHeading{Estimación de Precios de Viviendas en Melbourne}{https://github.com/benjaminocampo/DataCuration}{}
+    \textbf{Desarrollado en la materia Curación y Visualización de datos de la
+    Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones,
+    FaMAF.} \\
+    \textbf{Lenguajes de programación y herramientas utilizadas: Python, y
+    Pandas.} \\
+    \textbf{Duración: 2 meses.}
+
+    Exploración y curación de datos de un dataset dado por una competencia de
+    Kaggle de viviendas que fueron puestas en venta en Melbourne, Australia
+    durante el 2016 y 2017. Preparación de una matriz de datos con el fin de
+    utilizar modelos de aprendizaje supervisados y estimar el precio de
+    viviendas no antes registradas.
+
+\projectHeading{Uso de Redes Neuronales como Modelos Predictivos y
+    Generativos}{https://github.com/benjaminocampo/NeuralNetworks}{}
+    \textbf{Desarrollado en la materia Redes Neuronales de la Licenciatura en
+    Ciencias de la Computación, FaMAF.} \\
+    \textbf{Lenguajes de programación y herramientas utilizadas: Python, y
+    Pytorch.} \\
+    \textbf{Duración: 2 meses.}
+
+    Análisis de modelos Lotka Volterra que simulan un entorno predador-presa y
+    como dos especies interactuan. Implementación de ecuaciones Integrate and
+    Fire para el modelado de pulsos electricos neuronales transmisores de
+    información. Uso de autoencoders variacionales para preprocesamiento y
+    generación de imagenes.
+
+\projectHeading{Simulación de un Sistema de Cajeros ATM
+System}{https://github.com/benjaminocampo/atm_simulator}{} \textbf{Desarrollado
+en la materia Modelos y Simulación de la Licenciatura en Ciencias de la
+Computación, FaMAF.} \\
+    \textbf{Lenguajes de programación y herramientas utilizadas: Python.} \\
+    \textbf{Duración: 1 més.}
+
+    Implementación de un simulador estocástico de eventos discretos de llegada de
+    clientes a un sistema de cola en cajeros automáticos.
+
+%--------------------------------------------------------------
+%     Experiencia en Investigación
+%--------------------------------------------------------------
+\section{Experiencia en Investigación}
+
+\teachingHeading{Use de Word Embeddings para Grounding Heurístico en Planning
+Clásico}{}{FaMAF |}{Jul 2021 - Actualidad}
+
+    \textbf{Directores: Dr. M. Dominguez y Dr. C. Areces, FaMAF}
+
+    Uso de técnicas de machine learning que permitan guiar el proceso de
+    grounding en problemas de planning clásico.
+
+%--------------------------------------------------------------
+%     Actividades de Extensión
+%--------------------------------------------------------------
+\section{Servicio a la Comunidad}
+
+\teachingHeading{Acompañamiento Tecnológico a Sectores Vulnerables}{}{FaMAF}{Apr
+2021 - Actualidad}
+
+    Reacondicionamiento e instalación de software necesario en computadoras,
+    laptops, y tablets, con el fin de ser donadas a niños, jovenes, y adultos
+    con dificultades en el acceso de recursos tecnológicos.
+%--------------------------------------------------------------
+%     Actividades Extracurriculares
+%--------------------------------------------------------------
+\section{Actividades Extracurriculares}
+
+\teachingHeading{Escuela de Verano RIO 2020}{}{FCEFyN |}{Feb 2020}
+
+Escuela de Verano ubicada en la Universidad Nacional de Río Cuarto donde
+participé en cursos de Ciencias de la Computación, seminarios, y actividades
+extracurriculares.
+
+\teachingHeading{Torneo Argentino de Programación}{}{ACM International Collegiate
+Programming Contest |}{Sep 2019}
+
+Competencia en grupo de tres integrantes donde representé a la FaMAF en la
+resolución de un conjunto de problemas algorítmicos en el menor tiempo posible.
+
+\teachingHeading{Training Camp Argentina}{}{FaMAF |}{Jul 2019}
+
+Curso intensivo de dos semanas para desarrollar habilidades de resolución de
+problemas en competencias de programación.
+
+\teachingHeading{Campamento Científico Expedición Ciencia}{}{Neuquén, Argentina |}{Feb
+2016}
+
+Campamento vocacional con el fin de obtener un primer acercamiento a la
+exploración y pensamiento científico.
+
+\educationHeading{Carrera de Composición Musical: Trayecto Artístico
+Profesional}{Escuela Superior de Música de la Provincia de Salta Nº 6003 José Lo
+Giúdice}{Salta, Argentina |}{Mar 2012 - Dic 2014}
+%--------------------------------------------------------------
+%     Other Skills
+%--------------------------------------------------------------
+\section{Otras Habilidades}
+
+\paragraph{Idiomas:}
+{\begin{minipage}{10cm}
+    \begin{tabular}{|l||c|c|c|} \hline
+                 &  {Lectura}    &  {Habla}   &  {Escritura} \\ \hline \hline
+    Español (Lengua madre) &  Muy bien &  Muy bien & Muy bien \\
+    Inglés      & Muy bien   & Muy bien   & Muy bien  \\ \hline
+    \end{tabular}
+    \end{minipage}} \\
+\paragraph{Programación:}{Python, Scala, C, C++, Javacript, Java, Haskell.} \\
+\paragraph{Tecnologías:}{Git, Pandas, NLTK, Sklearn, Pytorch, Keras, SQL,
+MongoDB, \LaTeX, CUDA, Intrinsics, OpenMP, ISPC, ReactJS, GatsbyJS.} \\
+\paragraph{Pasatiempos:}{Yoga, musculación, clases de salsa y bachata, tocar la guitarra.}
+
+\sectionsep
+\end{document}
